@@ -6,10 +6,9 @@
   </head>
   <body>
 
+      <h1 align="center">Crave Crusher</h1>
+      
     <div class='container'>
-      <h1 align="center">This is heading 1</h1>
-      <h1>Heading 1</h1>
-      <p>paragraph 1</p>
 
       <h2>Heading 2</h2>
       <p>paragraph 2</p>
