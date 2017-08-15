@@ -6,8 +6,8 @@
   </head>
   <body>
 
-      <h1 align="center">Crave Crusher</h1>
-      
+      <h1 style="text-align:center">Crave Crusher</h1>
+
     <div class='container'>
 
       <h2>Heading 2</h2>
