@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About Us</a>
+  <a href="#">Our Mission</a>
+  <a href="#">Contact</a>
+  <a href="#">Settings</a>
+</div>
+
+<div id="main">
+<!--<h2>Sidenav Push Example</h2>
+  <p>Click on the element below to open the side navigation menu, and push this content to the right.</p> -->
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+</div>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</style>
+</head>
+<body>
+
+<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+
+</body>
+
+    <title>Crave Crusher</title>
+      <h1 style="text-align:center">Crave Crusher</h1>
+    <link href='css/bootstrap.css' rel='stylesheet'>
+  </head>
+  <body>
+  <style>
+  body {margin:0;}
+
+  .icon-bar {
+      width: 100%;
+      background-color: #555;
+      overflow: auto;
+  }
+
+  .icon-bar a {
+      float: left;
+      width: 20%;
+      text-align: center;
+      padding: 12px 0;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 36px;
+  }
+
+  .icon-bar a:hover {
+      background-color: #000;
+  }
+
+  .active {
+      background-color: #4CAF50 !important;
+  }
+  </style>
+  <body>
+
+  <div class="icon-bar">
+    <a class="active" href="#"><i class="fa fa-home"></i></a>
+    <a href="#"><i class="fa fa-search"></i></a>
+    <a href="#"><i class="fa fa-envelope"></i></a>
+    <a href="#"><i class="fa fa-globe"></i></a>
+    <a href="#"><i class="fa fa-trash"></i></a>
+  </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Georgia;}
+.mySlides {display:none}
+
+/* Slideshow container */
+
+/* Caption text */
+
+.text {
+  color: #A905D1;
+  font-size: 70px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+</div>
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 14px}
+}
+
+
+</style>
+</head>
+<body>
+
+<b>
+<div class="container-fluid">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="pizza.jpg" style="width:100%">
+  <div class="text">Crush your cravings!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="chicken.jpg" style="width:100%">
+  <div class="text">Choose healthier options!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="fruit.jpg" style="width:100%">
+  <div class="text">Feel Good!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="smoothie.jpg" style="width:100%">
+  <div class="text">With help from Crave Crusher!</div>
+</div>
+
+</div>
+<b>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script src='js/bootstrap.js'></script>
+    <!DOCTYPE html>
+<style>
+.dropbtn {
+    background-color: #92B639;
+    color: white;
+    padding: 14px 40px;
+    font-size: 24px;
+    border-radius: 12px;
+    border:2px solid #555555
+    cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #A6BF69;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown a:hover {background-color: #f1f1f1}
+.show {display:block;}
+</style>
+</head>
+<body>
+
+<center>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Cravings</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#bacon">Bacon</a>
+    <a href="#bagels">Bagels</a>
+    <a href="#candy">Candy</a>
+    <a href="#cereal">Cereal</a>
+    <a href="#cheese">Cheese</a>
+    <a href="indexchipspage.html">Chips</a>
+    <a href="#chocolate">Chocolate</a>
+    <a href="#coffee">Coffee</a>
+    <a href="#donuts">Donuts</a>
+    <a href="#frenchFries">French Fries</a>
+    <a href="#hamburger">Hamburger</a>
+    <a href="#iceCream">Ice Cream</a>
+    <a href="#pancakes">Pancakes</a>
+    <a href="#peanutButter">Peanut Butter</a>
+    <a href="#pickles">Pickles</a>
+    <a href="#pizza">Pizza</a>
+    <a href="#popcorn">Popcorn</a>
+    <a href="#soda">Soda</a>
+</center>
+
+
+
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+
+      }
+    }
+  }
+}
+</script>
+</style>
+</head>
+
+  </body>
+</html>
