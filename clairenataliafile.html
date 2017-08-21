@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <title>Crave Crusher</title>
+  <h1 style="text-align:center">Crave Crusher</h1>
+  <link href='css/bootstrap.css' rel='stylesheet'>
+
+  <style>
+  body {
+    font-family: "Lato", sans-serif;
+    margin:0;
+    font-family: Quicksand;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  .icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+
+  .icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+
+  .active {
+    background-color: #4CAF50 !important;
+  }
+
+
+  * {box-sizing:border-box}
+  .mySlides {display:none}
+
+  /* Slideshow container */
+
+  /* Caption text */
+
+  .text {
+    color: #000;
+    font-size: 70px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 250px;
+    width: 100%;
+    text-align: center;
+    </div>
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 14px}
+  }
+  .dropbtn {
+    background-color: #92B639;
+    color: white;
+    padding: 14px 40px;
+    font-size: 24px;
+    border-radius: 12px;
+    border:2px solid #555555
+    cursor: pointer;
+  }
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #A6BF69;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown a:hover {background-color: #f1f1f1}
+  .show {display:block;}
+
+
+  </style>
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1"> -->
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About Us</a>
+    <a href="#">Our Mission</a>
+    <a href="#">Contact</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <div id="main">
+    <!--<h2>Sidenav Push Example</h2>
+    <p>Click on the element below to open the side navigation menu, and push this content to the right.</p> -->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+  </div>
+
+
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+
+
+  <div class="container" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <script>
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+  </script>
+
+  <b>
+    <div class="container-fluid">
+      <div class="w3-content w3-display-container">
+
+        <div class="w3-display-container mySlides">
+          <img src="pizza.jpg" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Squash Pizza
+            http://wholeheartedeats.com
+          </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+          <img src="chicken.jpg" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Avocado, Mozzerella, Brushetta Chicken
+            http://iowagirleats.com
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="turkeyburger.jpg.jpeg" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Southwest Turkey Burger
+            http://foodnetwork.com
+          </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+          <img src="fruit.jpg" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Strawberries 'n' Cream Smoothie Bowl
+            http://buzzfeed.com
+          </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+          <img src="sorbet.jpg" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Pomelo Sorbet
+            http://andrewzimmern.coms
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <b>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+      }
+      </script>
+
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+      <script src='js/bootstrap.js'></script>
+
+
+      <center>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Salty</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#bacon">Bacon</a>
+            <a href="indexchipspage.html">Chips</a>
+            <a href="#frenchFries">French Fries</a>
+            <a href="#hamburger">Hamburger</a>
+            <a href="#pizza">Pizza</a>
+
+
+          </div>
+        </div>
+
+        <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+
+
+
+
+
+
+
+        <div class= "dropdownSweet">
+          <button onclick="MyFunction()" class="dropbtn">Sweet</button>
+          <div id="myDropdwn" class="dropdown-content">
+            <a href="#all">All</a>
+            <a href="#cookie">Cookie</a>
+            <a href="#candy">Candy</a>
+            <a href="#chocolate">Chocolate</a>
+            <a href="#coffee">Coffee</a>
+            <a href="#donuts">Donuts</a>
+            <a href="#soda">Soda</a>
+
+
+          </div>
+        </div>
+
+
+        <script>
