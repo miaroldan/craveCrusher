@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creamy Subsitutes</title>
+</head>
+<body>
+<center><h1> Creamy</h1></center>
+<img src="rassmoothie.jpg" class="img-rounded" alt="PurpleSmoothie" width="350" height="300">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<h2> Blueberry & Raspberry Smoothie</h2>
+     <div class="container">
+    1/4 cup fresh or frozen blackberries
+	<br>
+    1/4 cup fresh or frozen blueberries
+	<br>
+    1/4 cup fresh or frozen raspberries
+	<br>
+    1/4 cup fresh or frozen strawberries
+	<br>
+    1/2 of a banana
+	<br>
+    3/4 cup light soymilk or low-fat milk
+    <br>
+    1 1/2 teaspoons honey (optional)
+	<br>
+    1/4 teaspoon cinnamon
+    <br>
+    1/4 cup shaved ice 
+	<a href="http://www.partiesthatcook.com/blueberry-raspberry-smoothie/"> Full Recipe Here
+	
+	<h3>Creamy Spinach Dip</h3>
+<br>
+<img src="SpinachDip.jpg" class="img-rounded" alt="SDip" width="350" height="300">
+	
+  <p style="font-size:150%">1 packet of Knorr Vegetable Recipe Mix (Or any 40g vegetable dry soup packet.)
+	<br>
+    16 oz (454g) non-fat Greek yogurt
+	<br>
+    1/2 cup reduced fat real mayo
+	<br>
+    10 oz (283g) fresh or frozen spinach chopped
+	<br>
+    8 oz (227g) can of water chestnuts drained and chopped
+    <br>
+    4 green onions chopped
+    <br>
+    Author: Ted Kellmyer </p>
+<p style="font-size:130%"><a href="https://healthyeater.com/spinach-dip"></a>Full Recipe Here    
+      
+      
+
+</body>
+</html>
