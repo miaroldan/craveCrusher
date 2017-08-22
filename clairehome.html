@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href='css/bootstrap.css' rel='stylesheet'>
+<br>
+
+    <style>
+    body {
+        font: 400 15px Lato, sans-serif;
+        line-height: 1.8;
+        color: #818181;
+    }
+    h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #303030;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    h4 {
+        font-size: 19px;
+        line-height: 1.375em;
+        color: #303030;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+      <style>
+    .container-fluid {
+        padding: 60px 50px;
+    }
+    .bg-grey {
+        background-color: #f6f6f6;
+    }
+    .logo-small {
+        color: #f4511e;
+        font-size: 50px;
+    }
+    .logo {
+        color: #f4511e;
+        font-size: 200px;
+    }
+    .thumbnail {
+        padding: 0 0 15px 0;
+        border: none;
+        border-radius: 0;
+    }
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    .carousel-control.right, .carousel-control.left {
+        background-image: none;
+        color: #f4511e;
+    }
+    .carousel-indicators li {
+        border-color: #f4511e;
+    }
+    .carousel-indicators li.active {
+        background-color: #f4511e;
+    }
+    .item h4 {
+        font-size: 19px;
+        line-height: 1.375em;
+        font-weight: 400;
+        font-style: italic;
+        margin: 70px 0;
+    }
+    .item span {
+        font-style: normal;
+    }
+    .panel {
+        border: 1px solid #f4511e;
+        border-radius:0 !important;
+        transition: box-shadow 0.5s;
+    }
+    .panel:hover {
+        box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+    }
+    .panel-heading {
+        color: #fff !important;
+        background-color: #f4511e !important;
+        padding: 25px;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .panel-footer {
+        background-color: white !important;
+    }
+    .panel-footer h3 {
+        font-size: 32px;
+    }
+    .panel-footer h4 {
+        color: #aaa;
+        font-size: 14px;
+    }
+    .panel-footer .btn {
+        margin: 15px 0;
+        background-color: #f4511e;
+        color: #fff;
+    }
+    .navbar {
+        margin-bottom: 0;
+        background-color: #91C156;
+        z-index: 9999;
+        border: 0;
+        font-size: 12px !important;
+        line-height: 1.42857143 !important;
+        letter-spacing: 4px;
+        border-radius: 0;
+        font-family: Montserrat, sans-serif;
+    }
+    .navbar li a, .navbar .navbar-brand {
+        color: #fff !important;
+    }
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+        color: #6EC548 !important;
+        background-color: #fff !important;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: #fff !important;
+    }
+    footer .glyphicon {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #f4511e;
+    }
+    .slideanim {visibility:hidden;}
+    .slide {
+        animation-name: slide;
+        -webkit-animation-name: slide;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        visibility: visible;
+    }
+    @keyframes slide {
+      0% {
+        opacity: 0;
+        transform: translateY(70%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+    @-webkit-keyframes slide {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+      }
+      .btn-lg {
+          width: 100%;
+          margin-bottom: 35px;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .logo {
+          font-size: 150px;
+      }
+    }
+    </style>
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#myPage">Logo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about" onclick="myFunction()" class="dropbtn">SALTY</a></li>
+          <div class="dropdown">
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#bacon">Bacon</a>
+              <a href="indexchipspage.html">Chips</a>
+              <a href="#frenchFries">French Fries</a>
+              <a href="#hamburger">Hamburger</a>
+              <a href="#pizza">Pizza</a>
+            </div>
+          </div>
+          <li><a href="#services" onclick="MyFunction()" class="dropbtn">SWEET</a></li>
+          <div id="myDropdwn" class="dropdown-content">
+            <a href="#all">All</a>
+            <a href="#cookie">Cookie</a>
+            <a href="#candy">Candy</a>
+            <a href="#chocolate">Chocolate</a>
+            <a href="#coffee">Coffee</a>
+            <a href="#donuts">Donuts</a>
+            <a href="#soda">Soda</a>
+          <li><a href="#portfolio" onclick="MyFunction()" class="dropbtn">CRUNCHY</a></li>
+          <div id="myDropdwnn" class="dropdown-content">
+            <a href="#all">All</a>
+            <a href="#chips">Chips</a>
+            <a href="#cookies">Candy</a>
+          <li><a href="#pricing" onclick="MyFunction()" class="dropbtn">CREAMY</a></li>
+          <div id="myDropdwnnn" class="dropdown-content">
+            <a href="#all">All</a>
+            <a href="#icecream">Icecream</a>
+            <a href="#pudding">Pudding</a>
+            <a href="#nutella">Nutella</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <style>
+    body {
+      font-family: "Lato", sans-serif;
+      margin:0;
+      font-family: Quicksand;
+    }
+
+
+    * {box-sizing:border-box}
+    .mySlides {display:none}
+
+    /* Slideshow container */
+
+    /* Caption text */
+
+    .text {
+      color: #000;
+      font-size: 70px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 250px;
+      width: 100%;
+      text-align: center;
+      </div>
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 13px;
+      width: 13px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 2s;
+      animation-name: fade;
+      animation-duration: 5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 14px}
+    }
+    .dropbtn {
+      background-color: #92B639;
+      color: white;
+      padding: 14px 40px;
+      font-size: 24px;
+      border-radius: 12px;
+      border:2px solid #555555
+      cursor: pointer;
+    }
+    .dropbtn:hover, .dropbtn:focus {
+      background-color: #A6BF69;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown a:hover {background-color: #f1f1f1}
+    .show {display:block;}
+
+
+    </style>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About Us</a>
+      <a href="#">Our Mission</a>
+      <a href="#">Contact</a>
+      <a href="#">Settings</a>
+    </div>
+  <style>
+
+
+  body {
+    font-family: "Lato", sans-serif;
+    margin:0;
+    font-family: Quicksand;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  .icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+
+  .icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+
+  .active {
+    background-color: #4CAF50 !important;
+  }
+
+
+  * {box-sizing:border-box}
+  .mySlides {display:none}
+
+  /* Slideshow container */
+
+  /* Caption text */
+
+  .text {
+    color: #000;
+    font-size: 70px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 250px;
+    width: 100%;
+    text-align: center;
+    </div>
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 14px}
+  }
+  .dropbtn {
+    background-color: #92B639;
+    color: white;
+    padding: 14px 40px;
+    font-size: 24px;
+    border-radius: 12px;
+    border:2px solid #555555
+    cursor: pointer;
+  }
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #A6BF69;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown a:hover {background-color: #f1f1f1}
+  .show {display:block;}
+
+
+  </style>
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1"> -->
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About Us</a>
+    <a href="#">Our Mission</a>
+    <a href="#">Contact</a>
+    <a href="#">Settings</a>
+  </div>
+
+
+  <div class="container" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <script>
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+  </script>
+  <div style="background-color:transparent" class="jumbotron">
+ <h1><center>Your diet just got a lot easier</center></h1>
+ <p><center>Explore our smart alternatives to satisfy your hunger with Crave Crusher</center></p>
+ <body>
+  <b>
+    <div class="container-fluid">
+      <div class="w3-content w3-display-container">
+
+        <div class="w3-display-container mySlides">
+          <img src="pizza.jpg" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Squash Pizza
+            http://wholeheartedeats.com
+          </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+          <img src="chicken.jpg" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Avocado, Mozzerella, Brushetta Chicken
+            http://iowagirleats.com
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="turkeyburger.jpg.jpeg" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Southwest Turkey Burger
+            http://foodnetwork.com
+          </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+          <img src="fruit.jpg" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Strawberries 'n' Cream Smoothie Bowl
+            http://buzzfeed.com
+          </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+          <img src="sorbet.jpg" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Pomelo Sorbet
+            http://andrewzimmern.coms
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <b>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+      }
+
+      </script>
+
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+      <script src='js/bootstrap.js'></script>
+
+
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Salty</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#bacon">Bacon</a>
+            <a href="indexchipspage.html">Chips</a>
+            <a href="#frenchFries">French Fries</a>
+            <a href="#hamburger">Hamburger</a>
+            <a href="#pizza">Pizza</a>
+
+
+          </div>
+        </div>
+
+        <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+
+
+
+
+
+
+
+        <div class= "dropdownSweet">
+          <button onclick="MyFunction()" class="dropbtn">Sweet</button>
+          <div id="myDropdwn" class="dropdown-content">
+            <a href="#all">All</a>
+            <a href="#cookie">Cookie</a>
+            <a href="#candy">Candy</a>
+            <a href="#chocolate">Chocolate</a>
+            <a href="#coffee">Coffee</a>
+            <a href="#donuts">Donuts</a>
+            <a href="#soda">Soda</a>
+
+
+          </div>
+        </div>
+
+        <div class= "dropdownCrunchy">
+          <button onclick="MyFunctionn()" class="dropbtn">Crunchy</button>
+          <div id="myDropdwnn" class="dropdown-content">
+            <a href="#all">All</a>
+            <a href="#chips">Chips</a>
+            <a href="#cookies">Candy</a>
+
+          </div>
+        </div>
+
+        <div class= "dropdownCreamy">
+          <button onclick="MyFunctionnn()" class="dropbtn">Creamy</button>
+          <div id="myDropdwnnn" class="dropdown-content">
+            <a href="#all">All</a>
+            <a href="#icecream">Icecream</a>
+            <a href="#pudding">Pudding</a>
+            <a href="#nutella">Nutella</a>
+          </div>
+        </div>
+        <script>
+
+         <div style="background-color:transparent" class="jumbotron">
+  <h1><center>Your diet just got a lot easier</center></h1>
+  <p><center>Explore our smart alternatives to satisfy your hunger with Crave Crusher</center></p>
+  <body>
+
+  <center>
+  <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Cravings</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="indexbaconpage.html">Bacon</a>
+      <a href="#bagels">Bagels</a>
+      <a href="#candy">Candy</a>
+      <a href="#cereal">Cereal</a>
+      <a href="#cheese">Cheese</a>
+      <a href="indexchipspage.html">Chips</a>
+      <a href="#chocolate">Chocolate</a>
+      <a href="#coffee">Coffee</a>
+      <a href="#donuts">Donuts</a>
+      <a href="#frenchFries">French Fries</a>
+      <a href="#hamburger">Hamburger</a>
+      <a href="indexicecreampage.html">Ice Cream</a>
+      <a href="#pancakes">Pancakes</a>
+      <a href="#peanutButter">Peanut Butter</a>
+      <a href="#pickles">Pickles</a>
+      <a href="#pizza">Pizza</a>
+      <a href="#popcorn">Popcorn</a>
+      <a href="#soda">Soda</a>
+  </center>
+
+
+
+
+    </div>
+  </div>
+
+
+ <script>
+
+          /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+</div>
+
+<!-- Container (About Section) -->
+
+<div style="background-color: #A4FE48" class="jumbotron">
+  <div id="about" class="container-fluid">
+      <h2><center><font face="arial" color="white">ABOUT US</font></center></h2><br>
+
+      <h4><center><font face="arial" color="white">This application was made to help you find fun and satisfying snacks that won't cost you a healthy lifestyle.</font></center></h4><br>
+      <p><center><font face="arial" color="white"> It’s not news that junk food has multiple negative effects. The effects are a concern to people of all ages, <br>
+        sizes, and backgrounds. The first thought when it comes to eating junk food is obesity & diabetes, which is a huge issue. However the effects don’t stop there. <br>
+        Eating junk food can result in lower energy levels, acne, headaches, and depression. If you don’t notice weight gain after junk food consumption, don’t think that<br>
+         you aren’t hurting yourself in other equally, if not, more harmful ways.</font></center></p>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <font face="arial" color="#696969">
+      <h2><center>OUR MISSION</center></h2><br>
+      <h4><center> Our mission is to help you find fun and satisfying snacks that won't cost you a healthy lifestyle.</center></h4><br>
+      <p><center> According to <italic>Super Genes</italic> by Deepak Chopra and Rudolph E. Tanzi, "Only 5% of disease-related gene mutations are fully deterministic, while<br>
+         95% can be influenced by diet, behavior, and other environmental conditions." There are two different kinds of factors that affect gene expression: Physical and Mental.<br>
+          Mental factors include stress and thuoghts. Physical factors include sleep, excercise, and diet. That's where Crave Crusher comes in. It’s not news that junk food <br>
+          has multiple negative effects. The effects are a concern to people of all ages, sizes, and backgrounds. The first thought when it comes to eating junk food is <br>
+          obesity & diabetes, which is a huge issue. However, the effects don’t stop there. Eating junk food can result in lower energy levels, acne, headaches, and depression.<br>
+           If you don’t notice weight gain after junk food consumption, don’t think that you aren’t hurting yourself in other equally, if not, more harmful ways.<br>
+            We visualize Crave Crusher expanding to have features like personal dietary constraints. As Crave Crusher continues to grow, we hope to fight chronic diseases,<br>
+             promote a healthy diet, and improve the quality of life for thousands.
+      </font>
+</center></p>
+<br>
+<br>
+<br>
+<br>
+  </div>
+</div>
+</body>
+</html>
