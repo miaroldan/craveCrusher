@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Page Title</title>
+	<title>Crunchy Recipes</title>
 </head>
 <body>
 <h1>Crunchy Substitutes</h1>
 
 <img src="granola.png" class=".img-thumbnail" alt="Granola" width="304" height="236">
 <div class="container"
-<p> 2 cups raw, whole rolled oats,
+<p style="font-size:150%"> 2 cups raw, whole rolled oats,
    <br>
    organic ½ cup raw nuts,
    <br> 
