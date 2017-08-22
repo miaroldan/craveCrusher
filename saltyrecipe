@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<center><h1 style=background-color:rgb(255,163,107)>
+	 Salty Snacks</h1></center>
+ <img src="salty popcorn.jfif" class="img-rounded" alt="Popcorn" width="350" height="300">
+ 
+ </head>
+<body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<h2> Flavor Popcorn</h2>
+     <div class="container">
+     <p style="font-size:150%;">  8 cups air-popped popcorn
+     <br>
+     Nonstick spray
+     <br>
+      2 Tbsp dry buttermilk
+      <br>
+      3/4 tsp salt
+      <br>
+      1/2 tsp onion powder
+      <br>
+     1/2 tsp dry mustard
+     <br>
+     1/4 tsp garlic powder
+     <br>
+     1/4 tsp freshly ground pepper, preferably white pepper.
+	 <br>
+     <a href="https://www.weightwatchers.com/util/art/index_art.aspx?tabnum=1&art_id=31561&sc=3024//target="_blank"> More Recipes Here</a>
+      </div>
+<br>
+<br>
+<h3>"Movie Theater" Popcorn</h3>
+<br>
+<img src="movie pop.jfif" class="img-rounded" alt="Popcorn2" width="500" height="400">
+<br>
+  <div class="container">
+  <p style= font-size:150%> Movie theaters use butter-flavored oil, which has a lower water content than butter so it makes popcorn less soggy. Real clarified butter has the same effect.
+   <br>
+   Microwave melt 1 stick of butter 
+   <br>
+   Wait 5 min then remove top layer of foam on butter and any unmelted chunks
+   <br>
+   For every tablespoon of butter, use 5 cups of popcorn (add salt sparingly)
+   </p>
+   <br>
+  <p style="font-size:130%" > <a href="http://www.foodnetwork.com/recipes/food-network-kitchen/theater-style-buttered-popcorn-recipe-2103372"> Original Recipe Here
+   </div>
+
+
+
+
+</body>
+</html>
